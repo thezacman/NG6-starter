@@ -1,8 +1,29 @@
+// Variables
 $navbar-font-color: #FFFFFF;
 $navbar-background-color: #2B386F;
 $roboto-font-family: 'Roboto', sans-serif;
 
+// Breakpoints
 $small-breakpoint: 600px;
 $very-small-breakpoint: 290px;
 $small-breakpoint-str: "only screen and (max-width : #{$small-breakpoint})";
 $very-small-breakpoint-str: "only screen and (max-width : #{$very-small-breakpoint})";
+
+// Visibility Classes
+@media #{$small-breakpoint-str} {
+   .hide-for-small {
+      display: none;
+   }
+}
+
+.show-for-small {
+   display: none;
+
+   @media #{$small-breakpoint-str} {
+      display: block;
+
+      &.use-inline-block {
+         display: inline-block;
+      }
+   }
+}

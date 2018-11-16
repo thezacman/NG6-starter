@@ -1,5 +1,5 @@
 {
-  "name": "AngularJS Navbar",
+  "name": "angularjs-navbar",
   "version": "0.0.1",
   "description": "A responsive navbar written in AngularJS",
   "main": "index.js",
@@ -66,12 +66,7 @@
     "webpack",
     "es6"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/angularclass/NG6-starter.git"
-  },
-  "author": "AngularClass",
-  "license": "Apache-2.0",
+  "author": "Zachary Winstrom",
   "babel": {
     "plugins": [
       "transform-runtime"
