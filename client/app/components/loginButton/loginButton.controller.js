@@ -6,9 +6,9 @@ class LoginButtonController {
   }
 
   changeState() {
-     this.isLoggedIn = !this.isLoggedIn
-     this.text = this.texts[Number(this.isLoggedIn)]
-  }  
+    this.isLoggedIn = !this.isLoggedIn
+    this.text = this.texts[Number(this.isLoggedIn)]
+  }
 }
 
-export default LoginButtonController;
+export default LoginButtonController

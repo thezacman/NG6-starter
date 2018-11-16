@@ -1,11 +1,12 @@
 {
-  "name": "ng6-starter",
+  "name": "AngularJS Navbar",
   "version": "0.0.1",
-  "description": "Starter for Angular + ES6 + (Webpack or JSPM)",
+  "description": "A responsive navbar written in AngularJS",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.5.0",
     "angular-ui-router": "^1.0.0-beta.1",
+    "hamburgers": "^1.1.3",
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {

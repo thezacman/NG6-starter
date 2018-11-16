@@ -1,9 +1,9 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import Common from './common/common';
-import Components from './components/components';
-import AppComponent from './app.component';
 import 'normalize.css';
+import Common from './common/common';
+import AppComponent from './app.component';
+import Components from './components/components';
 
 angular.module('app', [
     uiRouter,
