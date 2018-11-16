@@ -83,22 +83,3 @@ input {
       width: 100%;
    }
 }
-
-// Visibility classes
-@media #{$small-breakpoint-str} {
-   .hide-for-small {
-      display: none;
-   }
-}
-
-.show-for-small {
-   display: none;
-
-   @media #{$small-breakpoint-str} {
-      display: block;
-
-      &.use-inline-block {
-         display: inline-block;
-      }
-   }
-}
