@@ -1,0 +1,21 @@
+@import "../../common/common";
+
+.login-button {
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   outline-color: #FFF;
+   padding: .5rem 1rem;
+   font-family: inherit;
+   background-color: #000;
+   color: $navbar-font-color;
+
+   &:hover {
+      background-color: lighten(#000, 20%);
+   }
+
+   @media #{$small-breakpoint-str} {
+      display: inline-block;
+      margin-bottom: .25rem;
+   }
+}

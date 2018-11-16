@@ -1,7 +1,104 @@
 @import "common/common";
 
-.app {
-  height: 100%;
-  background-color: $lightBgColor;
+* {
+   box-sizing: border-box;
 }
 
+html {
+   font-size: 16px;   
+}
+
+nav {
+   width: 100%;
+   display: flex;
+   padding: .5rem;
+   color: $navbar-font-color;
+   font-family: $roboto-font-family;
+   background-color: $navbar-background-color;
+
+   @media #{$small-breakpoint-str} {
+      display: block;
+      text-align: center;
+   }
+}
+
+.hide-for-small, .hide-for-small > div {
+   flex: 1;
+   display: flex;
+}
+
+.hide-for-small > div {
+   align-items: center;
+   justify-content: center;
+
+   > div {
+      text-align: center;
+   }
+}
+
+div.show-for-small {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height .5s ease;
+
+   &.expanded {
+      max-height: 200px;
+   }
+
+   div {
+      text-align: right;
+      padding-top: 1rem;
+      display: inline-block;
+
+      @media #{$very-small-breakpoint-str} {
+         text-align: center;
+      }
+   }         
+}
+
+img {
+   display: block;
+   height: 2.5rem;
+}
+
+label, input {
+   display: inline-block;
+}
+
+label {
+   margin: 0 1rem;
+   margin-bottom: .5rem;
+}
+
+input {
+   width: 10rem;
+   padding: .25rem;
+   font-family: inherit;
+
+   @media #{$small-breakpoint-str} {
+      margin-bottom: .5rem;
+   }
+
+   @media #{$very-small-breakpoint-str} {
+      width: 100%;
+   }
+}
+
+// Visibility classes
+@media #{$small-breakpoint-str} {
+   .hide-for-small {
+      display: none;
+   }
+}
+
+.show-for-small {
+   display: none;
+
+   @media #{$small-breakpoint-str} {
+      display: block;
+
+      &.use-inline-block {
+         display: inline-block;
+      }
+   }
+}
