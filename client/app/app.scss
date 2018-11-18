@@ -40,7 +40,7 @@ nav {
 div.show-for-small {
    max-height: 0;
    overflow: hidden;
-   transition: max-height .5s ease;
+   transition: max-height .75s ease;
 
    &.expanded {
       max-height: 200px;
@@ -60,6 +60,7 @@ div.show-for-small {
 img {
    display: block;
    height: 2.5rem;
+   transition: height .5s ease;
 
    @media #{$medium-breakpoint-str} {
       height: 3.5rem;
