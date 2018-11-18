@@ -5,12 +5,13 @@
 }
 
 html {
-   font-size: 16px;   
+   font-size: 16px;
 }
 
 nav {
    width: 100%;
    display: flex;
+   align-items: center;
    padding: .5rem;
    color: $navbar-font-color;
    font-family: $roboto-font-family;
@@ -51,14 +52,23 @@ div.show-for-small {
       display: inline-block;
 
       @media #{$very-small-breakpoint-str} {
-         text-align: center;
-      }
-   }         
+       text-align: center;
+    }
+ }
 }
 
 img {
    display: block;
    height: 2.5rem;
+
+   @media #{$medium-breakpoint-str} {
+      height: 3.5rem;
+   }
+
+   @media #{$small-breakpoint-str} {
+      height: 2.5rem;
+   }
+
 }
 
 label, input {

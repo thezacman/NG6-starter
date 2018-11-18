@@ -4,8 +4,10 @@ $navbar-background-color: #2B386F;
 $roboto-font-family: 'Roboto', sans-serif;
 
 // Breakpoints
+$medium-breakpoint: 909px;
 $small-breakpoint: 600px;
 $very-small-breakpoint: 290px;
+$medium-breakpoint-str: "only screen and (max-width : #{$medium-breakpoint})";
 $small-breakpoint-str: "only screen and (max-width : #{$small-breakpoint})";
 $very-small-breakpoint-str: "only screen and (max-width : #{$very-small-breakpoint})";
 
