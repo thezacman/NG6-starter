@@ -83,6 +83,10 @@ label, input {
 
 label {
    margin: 0 1rem .5rem 0;
+
+   @media #{$very-small-breakpoint-str} {
+      margin-right: 0;
+   }
 }
 
 input {
