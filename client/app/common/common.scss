@@ -4,12 +4,16 @@ $navbar-background-color: #2B386F;
 $roboto-font-family: 'Roboto', sans-serif;
 
 // Breakpoints
+@function breakpoint-str($breakpoint) {
+   @return "only screen and (max-width : #{$breakpoint})";
+}
+
 $medium-breakpoint: 909px;
 $small-breakpoint: 600px;
 $very-small-breakpoint: 290px;
-$medium-breakpoint-str: "only screen and (max-width : #{$medium-breakpoint})";
-$small-breakpoint-str: "only screen and (max-width : #{$small-breakpoint})";
-$very-small-breakpoint-str: "only screen and (max-width : #{$very-small-breakpoint})";
+$medium-breakpoint-str: breakpoint-str($medium-breakpoint);
+$small-breakpoint-str: breakpoint-str($small-breakpoint);
+$very-small-breakpoint-str: breakpoint-str($very-small-breakpoint);
 
 // Visibility Classes
 @media #{$small-breakpoint-str} {

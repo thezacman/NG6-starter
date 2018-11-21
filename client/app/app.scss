@@ -56,9 +56,9 @@ div.show-for-small {
       display: inline-block;
 
       @media #{$very-small-breakpoint-str} {
-       text-align: center;
-    }
- }
+         text-align: center;
+      }
+   }
 }
 
 img {
@@ -74,7 +74,6 @@ img {
    @media #{$small-breakpoint-str} {
       height: 2.5rem;
    }
-
 }
 
 label, input {
